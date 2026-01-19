@@ -9,16 +9,24 @@
 body {
     background-color: #1A0B2E;
     font-family: "inter", sans-serif;
+    color: white;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #412567;
+
 }
-.logo img{
+
+.logo img {
     width: 100%;
 }
+
 header ul {
     list-style: none;
     display: flex;
@@ -26,12 +34,14 @@ header ul {
     gap: 32px;
 
 }
+
 header ul li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    
+
 }
+
 header button {
     border: none;
     padding: 13px 16px;
@@ -42,40 +52,199 @@ header button {
     align-items: center;
     justify-content: center;
     gap: 4px;
-    background: linear-gradient(45deg,rgba(247, 233, 63, 1) 0%, rgba(145, 0, 248, 1) 50%, rgba(251, 9, 180, 1) 100%);
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1) 0%, rgba(145, 0, 248, 1) 50%, rgba(251, 9, 180, 1) 100%);
     background-size: 200% 100%;
     background-position: left center;
     transition: background-position 0.5s ease-in-out;
 }
+
 header button:hover {
-background: linear-gradient(45deg,rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(247, 233, 63, 1) 100%);
-color: rgb(83, 76, 76);
- background-position: right center;
-transition: background-position 0.5s ease-in-out;
-background-size: 200% 100%;
+    background: linear-gradient(45deg, rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(247, 233, 63, 1) 100%);
+    color: rgb(83, 76, 76);
+    background-position: right center;
+    transition: background-position 0.5s ease-in-out;
+    background-size: 200% 100%;
 }
+
 .menubar {
     color: white;
     display: none;
 }
 
 
+/* herp section */
+.hero-banar {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero-images {
+    background-image: url(assets/hero-circle.png);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 8px solid #2A186C;
+    border-radius: 50%;
+    
+}
+
+
+.dot {
+    background-color: #00FF88;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A0B2E;
+    box-shadow: 0 3px 27px 0 #00ff8888;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.hero-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero-alignment h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+
+.hero-alignment p {
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+
+.hero-alignment .hero-buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.btn1 {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1) 0%, rgba(145, 0, 248, 1) 50%, rgba(251, 9, 180, 1) 100%);
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.btn1:hover {
+    background: linear-gradient(45deg, rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(247, 233, 63, 1) 100%);
+    color: rgb(83, 76, 76);
+    background-position: right center;
+    transition: background-position 0.5s ease-in-out;
+    background-size: 200% 100%;
+}
+
+.btn2 {
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #00FF88;
+}
+
+.btn2:hover:hover {
+    background: linear-gradient(45deg, rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(247, 233, 63, 1) 100%);
+    color: rgb(83, 76, 76);
+    background-position: right center;
+    transition: background-position 0.5s ease-in-out;
+    background-size: 200% 100%;
+    border: none;
+}
 
 /* small device responsive */
 @media screen and (max-width: 576px) {
-    
-    header
-     {
+
+    header {
         padding: 16px 20px;
-     }
-    
-    header ul, header button {
-display: none;
     }
+
+    header ul,
+    header button {
+        display: none;
+    }
+
     .menubar {
         display: inline;
         font-size: 1.2rem;
     }
+.hero-banar {
+    margin-top: -144px;
+    padding: 40px 20px;
+    max-height: 760px;
+}
+    .hero-images {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    .hero-image2 {
+        width: auto;
+        height: 80px;
+
+    }
+
+    .dot {
+        font-size: 1rem;
+        top: 2px;
+        right: -5px;
+    }
+
+    .hero-images {
+        border: 6px solid #2A186C;
+        
+    }
+    .hero-alignment {
+        margin-top: 144px;
+    }
+
+    .hero-alignment h1 {
+        font-size: 2.5rem;
+
+    }
+  
+  
+   
 }
 
 
@@ -84,11 +253,13 @@ display: none;
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     header {
-            padding: 16px 20px;
+        padding: 16px 20px;
     }
+
     header ul li a {
         font-size: 0.8rem;
     }
+
     header button {
         font-size: 0.8rem;
         padding: 8px 12px;
