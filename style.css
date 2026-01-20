@@ -536,13 +536,14 @@ header button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
+transition: all 0.3s ease-out;
 
 }
 
 .social-links a:hover {
+
     transform: translateY(-10px);
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
     background-color: #0c0516;
     box-shadow: 2px -3px 5px #74da21, 0 0 10px #74da21, 0 0 20px #74da21, 0 0 0px #74da21;
 }
