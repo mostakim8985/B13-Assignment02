@@ -42,6 +42,11 @@ header ul li a {
 
 }
 
+header ul li a:hover {
+    color: #a299b1;
+    transition: 0.4s ease;
+}
+
 header button {
     border: none;
     padding: 13px 16px;
@@ -56,6 +61,7 @@ header button {
     background-size: 200% 100%;
     background-position: left center;
     transition: background-position 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 header button:hover {
@@ -101,6 +107,7 @@ header button:hover {
     position: relative;
     border: 8px solid #2A186C;
     border-radius: 50%;
+    box-shadow: 1px 0px 20px 2px #74da21;
 
 }
 
@@ -117,6 +124,30 @@ header button:hover {
     position: absolute;
     top: 20px;
     right: 15px;
+    animation: text-animat 1s linear infinite;
+}
+
+@keyframes text-animat {
+
+    0%,
+    100% {
+        background-color: #00FF88;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    50% {
+        background-color: #00FF88;
+        box-shadow: 0 0 10px #74da21,
+            0 0 15px #74da21,
+            0 0 30px #74da21,
+            0 0 0px #74da21;
+        color: #00FF88;
+        text-shadow: 0 0 10px #74da21,
+            0 0 20px #74da21,
+            0 0 40px #74da21,
+            0 0 80px #74da21;
+    }
 }
 
 .hero-alignment {
@@ -162,6 +193,7 @@ header button:hover {
     background-size: 200% 100%;
     background-position: left center;
     transition: background-position 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .btn1:hover {
@@ -183,15 +215,17 @@ header button:hover {
     gap: 8px;
     background: transparent;
     border: 1px solid #00FF88;
+    cursor: pointer;
+
 }
 
-.btn2:hover:hover {
+.btn2:hover {
     background: linear-gradient(45deg, rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(247, 233, 63, 1) 100%);
     color: rgb(83, 76, 76);
     background-position: right center;
     transition: background-position 0.5s ease-in-out;
     background-size: 200% 100%;
-    border: none;
+
 }
 
 /* about section */
@@ -411,6 +445,12 @@ header button:hover {
     min-height: 440px;
 }
 
+.feature-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 1px #00FF88;
+    transition: all 0.4s ease;
+}
+
 .feature-cards iframe {
     width: 100%;
     border-top-left-radius: 40px;
@@ -496,6 +536,15 @@ header button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+}
+
+.social-links a:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s ease-out;
+    background-color: #0c0516;
+    box-shadow: 2px -3px 5px #74da21, 0 0 10px #74da21, 0 0 20px #74da21, 0 0 0px #74da21;
 }
 
 footer {
@@ -552,7 +601,7 @@ footer {
     align-items: center;
     gap: 8px;
     color: #a299b1;
-
+    cursor: pointer;
 }
 
 footer p {
@@ -790,7 +839,7 @@ footer p {
     }
 
     footer {
-       min-height: 250px;
+        min-height: 250px;
 
         background-image: url("assets/Image.png");
     }
@@ -810,9 +859,9 @@ footer p {
         gap: 8px;
     }
 
-    .links img{
-    min-height: 24px;
-    min-width: 24px;
+    .links img {
+        min-height: 24px;
+        min-width: 24px;
     }
 
     .footer-logo {
@@ -823,7 +872,7 @@ footer p {
     .footer-social {
         gap: 16px;
         flex-direction: column;
-        
+
 
     }
 
