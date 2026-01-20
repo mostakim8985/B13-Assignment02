@@ -428,7 +428,7 @@ header button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    justify-items: center;
+    justify-content: center;
 
 }
 
@@ -459,15 +459,14 @@ header button:hover {
 }
 
 .cards-info {
-    margin-top: 20px;
-    padding: 0 20px;
+    padding: 24px;
     height: 226px;
 }
 
 .feature-container h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .feature-container p {
